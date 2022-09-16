@@ -1,0 +1,7 @@
+interface ISum {
+    (a: number, b: number): number;
+}
+
+const sum: ISum = (a, b) => a + b;
+
+console.log(sum(1, 2)); // 3
