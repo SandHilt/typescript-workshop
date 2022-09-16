@@ -1,3 +1,9 @@
+function classDecorator(): ClassDecorator {
+    return (target) => {
+      console.log("class decorator", target);
+    };
+  }
+
 function methodDecorator(): MethodDecorator {
   return (target, propertyKey, descriptor: PropertyDescriptor) => {
     const originalMethod = descriptor.value;
@@ -24,11 +30,6 @@ function parameterDecorator(): ParameterDecorator {
   };
 }
 
-function classDecorator(): ClassDecorator {
-  return (target) => {
-    console.log("class decorator", target);
-  };
-}
 
 @classDecorator()
 class Circle {
