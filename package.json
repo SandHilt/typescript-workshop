@@ -20,5 +20,8 @@
   "homepage": "https://github.com/SandHilt/typescript-workshop#readme",
   "devDependencies": {
     "typescript": "^4.8.3"
+  },
+  "engines": {
+    "node": ">= 18.0.0"
   }
 }
