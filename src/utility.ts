@@ -9,5 +9,18 @@ interface Userbase {
   };
 }
 
-type updateUser = Partial<Userbase>; // interface updateUser extends Partial<User> {}
-type Adminer = Omit<Userbase, 'address'>;
+type UpdateUser = Partial<Userbase>; // ou interface updateUser extends Partial<User> {}
+type Adminer = Omit<Userbase, "address">;
+type Visitor = Pick<Userbase, "name" | "surname">;
+function updateThisUser({
+  isAdmin,
+  ...adminUp
+}: Partial<Adminer>): Record<string, string> {
+  return {
+    name: "Foo",
+    surname: "Bar",
+    isAdmin: "true",
+    isOk: "true",
+    ...adminUp,
+  };
+}
