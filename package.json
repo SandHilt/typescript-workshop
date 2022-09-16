@@ -1,0 +1,24 @@
+{
+  "name": "typescript-workshop",
+  "version": "1.0.0",
+  "description": "Some examples using Typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SandHilt/typescript-workshop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SandHilt/typescript-workshop/issues"
+  },
+  "homepage": "https://github.com/SandHilt/typescript-workshop#readme",
+  "devDependencies": {
+    "typescript": "^4.8.3"
+  }
+}
